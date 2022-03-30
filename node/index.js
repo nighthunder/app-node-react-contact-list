@@ -56,8 +56,7 @@ app.post("/contacts/add/", async (req, res) => {
     const user_name = String(req.body.name);
     const user_email = String(req.body.email);  
     const user_phone = String(req.body.phone);
-    const contact = req.body;
-    console.log("BODIEESSS", req.body);
+    //console.log("BODIEESSS", req.body);
     const query = "Insert into contact_list (id, `name`, email, phone) VALUES(DEFAULT,?,?,?)";
     pool.query(query, [user_name, user_email, user_phone], (error, results) =>{
         if (error) {
@@ -68,6 +67,23 @@ app.post("/contacts/add/", async (req, res) => {
                 //res.end("oi");
             }else{
                 res.json({status: "Contato inserido"})
+                //res.end("no");
+            }    
+        }
+    })
+})
+
+app.post("/contacts/delete/:id", async (req, res) => {
+    const query = "Delete from contact_list where id = ?";
+    pool.query(query, [req.params.id], (error, results) =>{
+        if (error) {
+            console.log('Connection error: ', error)}
+        else{
+            if (!results){
+                res.json({status: "Not found!"});
+                //res.end("oi");
+            }else{
+                res.json({status: "Contato deletado com sucesso."})
                 //res.end("no");
             }    
         }
