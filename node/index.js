@@ -27,10 +27,8 @@ app.get("/contacts/", async (req, res) => {
     pool.query(query, [req.params.name], (error, results) =>{
         if (!results[0]){
             res.json({status: "Not found!"});
-            //res.end("oi");
         }else{
-            res.json(results)
-            //res.end("no");
+            res.json(results).end()
         }
 
         if (error) {console.log('Connection error: ', error)}
@@ -42,10 +40,10 @@ app.get("/contacts/:id", async (req, res) => {
     pool.query(query, [req.params.id], (error, results) =>{
         if (!results[0]){
             res.json({status: "Not found!"});
-            //res.end("oi");
+            res.end();
         }else{
             res.json(results)
-            //res.end("no");
+            res.end();
         }
 
         if (error) {console.log('Connection error: ', error)}

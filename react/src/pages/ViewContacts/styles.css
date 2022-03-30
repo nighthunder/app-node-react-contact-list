@@ -1,0 +1,72 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+}
+
+.module{
+    margin: 0px;
+    padding: 15px;
+    border-radius: 15px;
+    /*box-shadow: 1px 1px 1px rgb(227, 226, 226);*/
+}
+
+table{
+    border: 1px solid #000000;
+    padding: 0px;
+    background: #fff;
+    border-collapse: collapse;
+    margin: 10px 30px 30px;
+    box-shadow: 1px 1px 1px rgb(247, 242, 242);
+    cursor: pointer;
+    width: inherit;
+    min-width: 70%;
+}
+
+thead{
+    background: #282c34;
+    color: #fff;
+}
+
+tr{
+    border: 1px solid #b4b1b1;
+}
+
+th, td{
+    padding: 10px;
+}
+
+tr:nth-child(even):not(:first-child){
+    background: rgb(238, 218, 179);
+    color: #242222;
+}
+
+tr td:nth-child(2), tr th:nth-child(2){
+    text-align: left;
+}
+
+.btnSubmit{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.inputRow{
+    display: inline-block;
+    margin: 10px;
+}
+
+.formTitle{
+    text-align: left;
+    margin-left: -75px;
+    color: #282c34;
+}
+
+.inputLabel{
+    text-align: left;
+    margin: 10px auto;
+    color: #e38c1b !important;
+}
+
+

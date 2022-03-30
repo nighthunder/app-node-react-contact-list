@@ -1,0 +1,17 @@
+.App-header{
+    min-height: initial;
+    min-height: 40px;
+    max-height: 75px;
+}
+h3.title{
+    color: #e38c1b;
+    position: absolute;
+    left: 25px;
+    top: -30px;
+    letter-spacing: 0.04em;
+}
+
+.closeIcon{
+    color: red;
+    font-weighT: bold;
+}
