@@ -4,14 +4,12 @@
     max-height: 75px;
 }
 h3.title{
-    color: #e38c1b;
-    position: absolute;
-    left: 25px;
-    top: -30px;
+    color: #c7cbe1;
     letter-spacing: 0.04em;
 }
 
 .closeIcon{
-    color: red;
+    color: #757a84;
     font-weighT: bold;
+    font-size: 1.3em;
 }

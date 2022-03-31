@@ -5,7 +5,7 @@ const Navbar = (props) => {
 
     return (
       <div>
-       <h3 className="title">Lista de contatos 1.0</h3>
+       <h3 className="title">Lista de contatos 1.0 - Gerencie seus contatos</h3>
       </div>
     );
 }

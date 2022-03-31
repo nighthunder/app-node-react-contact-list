@@ -72,6 +72,28 @@ app.post("/contacts/add/", async (req, res) => {
     })
 })
 
+app.post("/contacts/edit/:id", async (req, res) => {
+    const user_name = String(req.body.name);
+    const user_email = String(req.body.email);  
+    const user_phone = String(req.body.phone);
+    const user_address = String(req.body.address);
+    //console.log("BODIEESSS", req.body);
+    const query = "Update contact_list set `name` = ?, email = ?, phone = ?, address = ? where id = ? ";
+    pool.query(query, [user_name, user_email, user_phone, user_address, req.params.id], (error, results) =>{
+        if (error) {
+            console.log('Connection error: ', error)}
+        else{
+            if (!results){
+                res.json({status: "Not found!"});
+                //res.end("oi");
+            }else{
+                res.json({status: "Contato inserido"})
+                //res.end("no");
+            }    
+        }
+    })
+})
+
 app.post("/contacts/delete/:id", async (req, res) => {
     const query = "Delete from contact_list where id = ?";
     pool.query(query, [req.params.id], (error, results) =>{
@@ -88,6 +110,8 @@ app.post("/contacts/delete/:id", async (req, res) => {
         }
     })
 })
+
+
 
 const pool = mysql.createPool({
     host: process.env.DB_HOST,
