@@ -33,4 +33,4 @@ Configuraзгo e programas necessбrios para rodar a aplicaзгo localmente
 
 	Com os dois projetos sendo servidos vocк pode acessar a aplicaзгo no localhost:3000(pode ser que esteja em outra porta, ao servir o react vai ser mostrado)
    
-      
+     ** Tem uma foto da aplicação em screenshot_1.png 
