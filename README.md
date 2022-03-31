@@ -8,7 +8,7 @@ Configuraзгo e programas necessбrios para rodar a aplicaзгo localmente
 		```
         node install
         ```
-    * Crie uma cуpia do arquivo .env.example e renomeio-o apenas para .env
+    * Crie uma cópia do arquivo .env.example e renomeio-o apenas para .env
     * Crie uma instância de banco de dados 
 	* No seu arquivo .env, coloque em DB_DATABASE o nome do banco que vocк criou, em DB_USERNAME coloque root e em DB_PASSWORD deixe vazio
     * Apуs criar o banco, execute banco no console do MYSQl banco que está em /dump
@@ -25,11 +25,11 @@ Configuraзгo e programas necessбrios para rodar a aplicaзгo localmente
 		```
         npm install
         ```
-    * Com isso vocк jб pode servir a aplicaзгo react com
+    * Com isso você já pode servir a aplicação react com
 		```
         npm start
         ```
-    * obs.: Nas prуximas vezes que for servir o react basta apenas rodar o comando para servir
+    * obs.: Nas próximas vezes que for servir o react basta apenas rodar o comando para servir
 
 	Com os dois projetos sendo servidos vocк pode acessar a aplicaзгo no localhost:3000(pode ser que esteja em outra porta, ao servir o react vai ser mostrado)
    
