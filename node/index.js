@@ -54,9 +54,10 @@ app.post("/contacts/add/", async (req, res) => {
     const user_name = String(req.body.name);
     const user_email = String(req.body.email);  
     const user_phone = String(req.body.phone);
+    const user_address = String(req.body.address);
     //console.log("BODIEESSS", req.body);
-    const query = "Insert into contact_list (id, `name`, email, phone) VALUES(DEFAULT,?,?,?)";
-    pool.query(query, [user_name, user_email, user_phone], (error, results) =>{
+    const query = "Insert into contact_list (id, `name`, email, phone, address) VALUES(DEFAULT,?,?,?,?)";
+    pool.query(query, [user_name, user_email, user_phone, user_address], (error, results) =>{
         if (error) {
             console.log('Connection error: ', error)}
         else{
