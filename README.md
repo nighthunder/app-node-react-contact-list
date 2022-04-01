@@ -11,7 +11,7 @@ Configuraзгo e programas necessбrios para rodar a aplicaзгo localmente
     * Crie uma cópia do arquivo .env.example e renomeio-o apenas para .env
     * Crie uma instância de banco de dados 
 	* No seu arquivo .env, coloque em DB_DATABASE o nome do banco que vocк criou, em DB_USERNAME coloque root e em DB_PASSWORD deixe vazio
-    * Apуs criar o banco, execute banco no console do MYSQl banco que está em /dump
+    * Apуs criar o banco, carregue o sql do banco MYSQl banco que está em /dump
     * obs.: Certifique-se de que o Mysql está rodando
     * Sirva a REST FULl api com node [NodeJS](https://nodejs.org/en/download/) na porta configurada no .env
 		```
