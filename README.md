@@ -6,7 +6,7 @@ Configuraзгo e programas necessбrios para rodar a aplicaзгo localmente
 * **Node**
 	* Baixe e instale o [NodeJS](https://nodejs.org/en/download/)
 		```
-        node install
+        npm install
         ```
     * Crie uma cópia do arquivo .env.example e renomeio-o apenas para .env
     * Crie uma instância de banco de dados 
