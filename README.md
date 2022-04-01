@@ -5,6 +5,7 @@ Configuraзгo e programas necessбrios para rodar a aplicaзгo localmente
 
 * **Node**
 	* Baixe e instale o [NodeJS](https://nodejs.org/en/download/)
+	* Dentro da pasta /node/ rode o comando para instalar as dependências do node:
 		```
         npm install
         ```
