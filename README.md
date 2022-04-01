@@ -1,7 +1,7 @@
 # Aplicação formulário de Contatos Node + ReactJS
 
 
-Configuraзгo e programas necessбrios para rodar a aplicaзгo localmente
+Configuração e programas necessários para rodar a aplicação localmente
 
 * **Node**
 	* Baixe e instale o [NodeJS](https://nodejs.org/en/download/)
